@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+}
+
+void sort(int *arrayPtr, int len){
+  int i;
+  for(i = 0; i < len; i++){
+    int j;
+    int loc = i;
+    for(j = i -1; j >= 0; j--){
+      if (*(arrayPtr + j) > *(arrayPtr + loc)){
+	swap(arrayPtr + j, arrayPtr + loc);
+	loc = j;
+      }
+    }
+  }
+}
+
+void swap(int *a, int *b){
+  int temp = *a;
+  *a = *b;
+  *b = temp;
+}
