@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+}
+
+func sort(xs []int) []int{
+	for k,_ := range xs {
+		a := k
+		for j := k-1; j>= 0; j-- {
+			if xs[a] < xs[j] {
+				temp := xs[a]
+				xs[a] = xs[j]
+				xs[j] = temp
+				a = j
+			}
+		}
+	}
+}
