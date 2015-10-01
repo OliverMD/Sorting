@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var test = []int{3,2,1, 4}
+	var test = []int{3,2,1,4}
 	fmt.Printf("%v\n", test)
 	sort(test)
 	fmt.Printf("%v\n", test)
